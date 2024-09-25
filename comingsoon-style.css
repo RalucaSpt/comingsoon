@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.logo {
+    width: 15%;
+    margin: 0; 
+}
+
+.container {
+    margin: 50px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-panel {
+    background-color: #445444;
+}
+
+.right-panel {
+    background-color: #fff;
+}
+
+.worker {
+    width: 90%;
+    border-radius: 5px;
+    height: auto;
+    max-height: 90%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.653);
+    object-fit: contain;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #495057;
+    text-shadow: 2px 2px 4px #c1bcbc;
+}
+
+p#descriere {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: #445444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px; 
+    display: inline-block; 
+    transition: background-color 0.3s; 
+}
+
+@media (max-width: 800px) {
+    button {
+        display: block; 
+        width: 100%;
+    }
+    .container {
+        flex-direction: column; 
+    }
+
+    .left-panel, .right-panel {
+        width: 100%; 
+        padding: 20px; 
+        flex: none; 
+    }
+}
+
+button:hover {
+    background-color: #445444af;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.button-group {
+    margin: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f3f9f488; 
+    color: #333;
+    text-align: center;
+    font-size: xx-small;
+    padding: 20px;
+    margin-top: px; 
+    border-top: 1px solid #ccc; 
+}
+
+footer h2,h3,p {
+    margin-top: 0;
+    color: #666; 
+    font-size: 1.5em;
+}
+
+footer h3,p {
+    margin-bottom: 10px;
+    font-size: xx-small;
+}
